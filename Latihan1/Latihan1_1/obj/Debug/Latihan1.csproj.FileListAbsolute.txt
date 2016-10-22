@@ -6,3 +6,4 @@ D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\La
 D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan1_1\obj\Debug\Latihan1_1.Form1.resources
 D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan1_1\obj\Debug\Latihan1_1.Properties.Resources.resources
 D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan1_1\obj\Debug\Latihan1.csproj.GenerateResource.Cache
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan1_1\obj\Debug\Latihan1.csprojResolveAssemblyReference.cache

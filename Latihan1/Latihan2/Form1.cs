@@ -12,6 +12,9 @@ namespace Latihan2
 {
     public partial class Form1 : Form
     {
+        Dictionary<string, int> months = new Dictionary<string, int>();
+        string name_month = "";
+        DateTime tanggal;
         public Form1()
         {
             InitializeComponent();
@@ -21,6 +24,7 @@ namespace Latihan2
         {
             DateTime dstart = new DateTime(2016, 1, 1);
             DateTime dend = new DateTime(2016, 12, 31);
+            //birthday_bolded_dates
             monthCalendar1.AddAnnuallyBoldedDate(new DateTime(1997,4,27));
             while (dstart.DayOfWeek != DayOfWeek.Saturday && dstart.DayOfWeek != DayOfWeek.Sunday)
                 dstart = dstart.AddDays(1);
@@ -41,7 +45,33 @@ namespace Latihan2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (domainUpDown1.Text != "Month")
+            {
+                monthCalendar1.AddAnnuallyBoldedDate(
+                    new DateTime(DateTime.Now.Year, months[domainUpDown1.Text], Convert.ToInt32(numericUpDown1.Value)));
+                monthCalendar1.UpdateBoldedDates();
+            }
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            tanggal = new DateTime(DateTime.Now.Year, 1, DateTime.Now.Day);
+            for (int i = 1; i <= 12; i++)
+            {
+                name_month = tanggal.ToString("MMMM");
+                months.Add(name_month, i);
+                tanggal = tanggal.AddMonths(1);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (domainUpDown1.Text != "Month")
+            {
+                monthCalendar1.RemoveAnnuallyBoldedDate(
+                    new DateTime(DateTime.Now.Year, months[domainUpDown1.Text], Convert.ToInt32(numericUpDown1.Value)));
+                monthCalendar1.UpdateBoldedDates();
+            }
         }
     }
 }
