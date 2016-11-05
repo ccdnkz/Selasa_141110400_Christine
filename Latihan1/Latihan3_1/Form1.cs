@@ -9,57 +9,59 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Text;
 using System.Reflection;
-using System.IO;
-namespace Latihan3_1
+
+namespace Latihan_3_1
 {
     public partial class Form1 : Form
     {
-        List<string> fonts = new List<string>();
         public Form1()
         {
             InitializeComponent();
+
+            rtbNote.Font = new Font("Consolas", 12.0f);
+
+            rtbNote.Height = this.Height;
+            rtbNote.Width = this.Width;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Color wrn = new Color();
-            PropertyInfo[] p = wrn.GetType().GetProperties();
-            foreach (FontFamily font in System.Drawing.FontFamily.Families)
+            Color warna = new Color();
+            PropertyInfo[] p = warna.GetType().GetProperties();
+            InstalledFontCollection font = new InstalledFontCollection();
+
+            for (int i = 8; i <= 72; i++)
             {
-                fonts.Add(font.Name);
+                this.font.Items.Add(i);
             }
-            for (int i = 8; i <= 54; i += 2)
+
+            foreach (FontFamily f in font.Families)
             {
-                comboBox2.Items.Add(i);
+                ffamily.Items.Add(f.Name);
             }
-            foreach (string font in fonts)
-            {
-                comboBox1.Items.Add(font);
-            }
-            checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            checkBox2.Appearance = System.Windows.Forms.Appearance.Button;
-            checkBox3.Appearance = System.Windows.Forms.Appearance.Button;
-            comboBox3.DrawMode = DrawMode.OwnerDrawFixed;
+
+            color.ComboBox.DrawMode = DrawMode.OwnerDrawFixed;
 
             foreach (PropertyInfo c in p)
             {
                 if (c.PropertyType == typeof(System.Drawing.Color))
                 {
-                    comboBox3.Items.Add(c.Name);
+                    color.Items.Add(c.Name);
                 }
             }
 
-            this.comboBox3.DrawItem += new DrawItemEventHandler(comboBox3_DItem);
+            this.color.ComboBox.DrawItem += new DrawItemEventHandler(tscbColor_DItem);
 
-            comboBox3.SelectedIndex = 8;
-            
-            comboBox2.Text = richTextBox1.Font.Size.ToString();
-            comboBox1.Text = richTextBox1.Font.Name;
+            color.SelectedIndex = 8;
+
+            this.font.Text = rtbNote.Font.Size.ToString();
+            ffamily.Text = rtbNote.Font.Name;
 
             ubahSize();
             ubahFont();
         }
-        private void comboBox3_DItem(object sender, DrawItemEventArgs e)
+
+        private void tscbColor_DItem(object sender, DrawItemEventArgs e)
         {
             if (e.Index >= 0)
             {
@@ -68,7 +70,7 @@ namespace Latihan3_1
                 Brush tBrush = new SolidBrush(e.ForeColor);
 
                 g.FillRectangle(brush, e.Bounds);
-                string s = (string)this.comboBox3.Items[e.Index].ToString();
+                string s = (string)this.color.Items[e.Index].ToString();
                 SolidBrush b = new SolidBrush(Color.FromName(s));
                 e.Graphics.DrawRectangle(Pens.Black, 2, e.Bounds.Top + 1, 20, 11);
                 e.Graphics.FillRectangle(b, 3, e.Bounds.Top + 2, 19, 10);
@@ -78,113 +80,159 @@ namespace Latihan3_1
             }
             e.DrawFocusRectangle();
         }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (comboBox1.Focused == false)
-            {
-                return;
-            }
-            ubahFont();
-        }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void tsbtnBold_Click(object sender, EventArgs e)
         {
-            int a = richTextBox1.SelectionStart;
-            int b = richTextBox1.SelectionLength + a;
+            bold.Checked = !bold.Checked;
+
+            int a = rtbNote.SelectionStart;
+            int b = rtbNote.SelectionLength + a;
             if (b - a != 0)
             {
                 for (int i = a; i < b; i++)
                 {
-                    richTextBox1.SelectionStart = i;
-                    richTextBox1.SelectionLength = 1;
-                    richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, richTextBox1.SelectionFont.Style ^ FontStyle.Bold);
+                    rtbNote.SelectionStart = i;
+                    rtbNote.SelectionLength = 1;
+                    rtbNote.SelectionFont = new Font(rtbNote.SelectionFont.FontFamily, rtbNote.SelectionFont.Size, rtbNote.SelectionFont.Style ^ FontStyle.Bold);
                 }
-                richTextBox1.SelectionStart = a;
-                richTextBox1.SelectionLength = b - a;
+                rtbNote.SelectionStart = a;
+                rtbNote.SelectionLength = b - a;
             }
             else
             {
-                FontStyle bold = richTextBox1.SelectionFont.Style;
+                FontStyle bold = rtbNote.SelectionFont.Style;
                 bold ^= FontStyle.Bold;
-                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, bold);
+                rtbNote.SelectionFont = new Font(rtbNote.SelectionFont.FontFamily, rtbNote.SelectionFont.Size, bold);
             }
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void tsbtnItalic_Click(object sender, EventArgs e)
         {
-            if (comboBox2.Focused == false)
+            italic.Checked = !italic.Checked;
+
+            int a = rtbNote.SelectionStart;
+            int b = rtbNote.SelectionLength + a;
+            if (b - a != 0)
+            {
+                for (int i = a; i < b; i++)
+                {
+                    rtbNote.SelectionStart = i;
+                    rtbNote.SelectionLength = 1;
+                    rtbNote.SelectionFont = new Font(rtbNote.SelectionFont.FontFamily, rtbNote.SelectionFont.Size, rtbNote.SelectionFont.Style ^ FontStyle.Italic);
+                }
+                rtbNote.SelectionStart = a;
+                rtbNote.SelectionLength = b - a;
+            }
+            else
+            {
+                FontStyle italic = rtbNote.SelectionFont.Style;
+                italic ^= FontStyle.Italic;
+                rtbNote.SelectionFont = new Font(rtbNote.SelectionFont.FontFamily, rtbNote.SelectionFont.Size, italic);
+            }
+        }
+
+        private void tsbtnUnderline_Click(object sender, EventArgs e)
+        {
+            und.Checked = !und.Checked;
+
+            int a = rtbNote.SelectionStart;
+            int b = rtbNote.SelectionLength + a;
+            if (b - a != 0)
+            {
+                for (int i = a; i < b; i++)
+                {
+                    rtbNote.SelectionStart = i;
+                    rtbNote.SelectionLength = 1;
+                    rtbNote.SelectionFont = new Font(rtbNote.SelectionFont.FontFamily, rtbNote.SelectionFont.Size, rtbNote.SelectionFont.Style ^ FontStyle.Underline);
+                }
+                rtbNote.SelectionStart = a;
+                rtbNote.SelectionLength = b - a;
+            }
+            else
+            {
+                FontStyle under = rtbNote.SelectionFont.Style;
+                under ^= FontStyle.Underline;
+                rtbNote.SelectionFont = new Font(rtbNote.SelectionFont.FontFamily, rtbNote.SelectionFont.Size, under);
+            }
+        }
+
+        private void tscbFontSize_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (font.Focused == false)
             {
                 return;
             }
             ubahSize();
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void tscbFont_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int a = richTextBox1.SelectionStart;
-            int b = richTextBox1.SelectionLength + a;
-            if (b - a != 0)
+            if (ffamily.Focused == false)
             {
-                for (int i = a; i < b; i++)
-                {
-                    richTextBox1.SelectionStart = i;
-                    richTextBox1.SelectionLength = 1;
-                    richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, richTextBox1.SelectionFont.Style ^ FontStyle.Italic);
-                }
-                richTextBox1.SelectionStart = a;
-                richTextBox1.SelectionLength = b - a;
+                return;
             }
-            else
+            ubahFont();
+        }
+
+        private void tscbColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (color.Focused == false)
             {
-                FontStyle itc = richTextBox1.SelectionFont.Style;
-                itc ^= FontStyle.Italic;
-                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, itc);
+                return;
+            }
+            ubahWarna();
+        }
+
+        private void ubahSize()
+        {
+            try
+            {
+                float size = (font.Text == "") ? 12 : Convert.ToInt16(font.Text);
+                int a = rtbNote.SelectionStart;
+                int b = rtbNote.SelectionLength + a;
+                if (b - a != 0)
+                {
+                    for (int i = a; i < b; i++)
+                    {
+                        rtbNote.SelectionStart = i;
+                        rtbNote.SelectionLength = 1;
+                        rtbNote.SelectionFont = new Font(rtbNote.SelectionFont.FontFamily, size, rtbNote.SelectionFont.Style);
+                    }
+                    rtbNote.SelectionStart = a;
+                    rtbNote.SelectionLength = b - a;
+                }
+                else
+                {
+                    rtbNote.SelectionFont = new Font(rtbNote.SelectionFont.FontFamily, size, rtbNote.SelectionFont.Style);
+                }
+            }
+            catch
+            {
+                return;
             }
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-            int a = richTextBox1.SelectionStart;
-            int b = richTextBox1.SelectionLength + a;
-            if (b - a != 0)
-            {
-                for (int i = a; i < b; i++)
-                {
-                    richTextBox1.SelectionStart = i;
-                    richTextBox1.SelectionLength = 1;
-                    richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, richTextBox1.SelectionFont.Style ^ FontStyle.Underline);
-                }
-                richTextBox1.SelectionStart = a;
-                richTextBox1.SelectionLength = b - a;
-            }
-            else
-            {
-                FontStyle und = richTextBox1.SelectionFont.Style;
-                und ^= FontStyle.Underline;
-                richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, richTextBox1.SelectionFont.Size, und);
-            }
-        }
         private void ubahFont()
         {
-            int a = richTextBox1.SelectionStart;
-            int b = richTextBox1.SelectionLength + a;
+            int a = rtbNote.SelectionStart;
+            int b = rtbNote.SelectionLength + a;
             try
             {
                 if (b - a != 0)
                 {
-                    string fnt = comboBox1.Text;
+                    string fnt = ffamily.Text;
                     for (int i = a; i < b; i++)
                     {
-                        richTextBox1.SelectionStart = i;
-                        richTextBox1.SelectionLength = 1;
-                        richTextBox1.SelectionFont = new Font(fnt, richTextBox1.SelectionFont.Size, richTextBox1.SelectionFont.Style);
+                        rtbNote.SelectionStart = i;
+                        rtbNote.SelectionLength = 1;
+                        rtbNote.SelectionFont = new Font(fnt, rtbNote.SelectionFont.Size, rtbNote.SelectionFont.Style);
                     }
-                    richTextBox1.SelectionStart = a;
-                    richTextBox1.SelectionLength = b - a;
+                    rtbNote.SelectionStart = a;
+                    rtbNote.SelectionLength = b - a;
                 }
                 else
                 {
-                    richTextBox1.SelectionFont = new Font(comboBox1.Text, richTextBox1.SelectionFont.Size, richTextBox1.SelectionFont.Style);
+                    rtbNote.SelectionFont = new Font(ffamily.Text, rtbNote.SelectionFont.Size, rtbNote.SelectionFont.Style);
 
                 }
             }
@@ -198,35 +246,7 @@ namespace Latihan3_1
         {
             try
             {
-                richTextBox1.SelectionColor = Color.FromName(comboBox3.Text);
-            }
-            catch
-            {
-                return;
-            }
-        }
-        private void ubahSize()
-        {
-            try
-            {
-                float size = (comboBox2.Text == "") ? 12 : Convert.ToInt16(comboBox2.Text);
-                int a = richTextBox1.SelectionStart;
-                int b = richTextBox1.SelectionLength + a;
-                if (b - a != 0)
-                {
-                    for (int i = a; i < b; i++)
-                    {
-                        richTextBox1.SelectionStart = i;
-                        richTextBox1.SelectionLength = 1;
-                        richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, size, richTextBox1.SelectionFont.Style);
-                    }
-                    richTextBox1.SelectionStart = a;
-                    richTextBox1.SelectionLength = b - a;
-                }
-                else
-                {
-                    richTextBox1.SelectionFont = new Font(richTextBox1.SelectionFont.FontFamily, size, richTextBox1.SelectionFont.Style);
-                }
+                rtbNote.SelectionColor = Color.FromName(color.Text);
             }
             catch
             {
@@ -234,41 +254,62 @@ namespace Latihan3_1
             }
         }
 
-        private void richTextBox1_SelectionChanged(object sender, EventArgs e)
+        private void rtbNote_SelectionChanged(object sender, EventArgs e)
         {
-            checkBox1.Checked = checkBox2.Checked = checkBox3.Checked = false;
+            bold.Checked = italic.Checked = und.Checked = false;
 
-            if (richTextBox1.SelectionFont == null)
+            if (rtbNote.SelectionFont == null)
             {
-                comboBox2.Text = "";
-                comboBox1.Text = "";
+                font.Text = "";
+                ffamily.Text = "";
             }
             else
             {
-                comboBox1.Text = richTextBox1.SelectionFont.Name;
-                comboBox2.Text = richTextBox1.SelectionFont.Size.ToString();
-                if (richTextBox1.SelectionFont.Bold)
+                ffamily.Text = rtbNote.SelectionFont.Name;
+                font.Text = rtbNote.SelectionFont.Size.ToString();
+                if (rtbNote.SelectionFont.Bold)
                 {
-                    checkBox1.Checked = true;
+                    bold.Checked = true;
                 }
-                if (richTextBox1.SelectionFont.Italic)
+                if (rtbNote.SelectionFont.Italic)
                 {
-                    checkBox2.Checked = true;
+                    italic.Checked = true;
                 }
-                if (richTextBox1.SelectionFont.Underline)
+                if (rtbNote.SelectionFont.Underline)
                 {
-                    checkBox3.Checked = true;
+                    und.Checked = true;
                 }
+            }
+
+            if (rtbNote.SelectionColor.Name == "0")
+            {
+                color.Text = "";
+            }
+            else
+            {
+                color.Text = rtbNote.SelectionColor.Name;
             }
         }
 
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        private void Form1_Resize(object sender, EventArgs e)
         {
-            if (comboBox3.Focused == false)
-            {
-                return;
-            }
-            ubahWarna();
+            rtbNote.Height = this.Height;
+            rtbNote.Width = this.Width;
+        }
+
+        private void rtbNote_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tscbColor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tscbFontSize_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

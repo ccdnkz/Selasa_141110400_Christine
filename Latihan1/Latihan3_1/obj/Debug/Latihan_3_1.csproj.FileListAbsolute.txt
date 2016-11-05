@@ -1,0 +1,17 @@
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_3_1\bin\Debug\Latihan_3_1.exe.config
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_3_1\bin\Debug\Latihan_3_1.exe
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_3_1\bin\Debug\Latihan_3_1.pdb
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_3_1\obj\Debug\Latihan_3_1.Form1.resources
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_3_1\obj\Debug\Latihan_3_1.Properties.Resources.resources
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_3_1\obj\Debug\Latihan_3_1.csproj.GenerateResource.Cache
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_3_1\obj\Debug\Latihan_3_1.exe
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_3_1\obj\Debug\Latihan_3_1.pdb
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_3_1\bin\Debug\Latihan_3_1.exe.config
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_3_1\obj\Debug\Latihan_3_1.exe
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_3_1\obj\Debug\Latihan_3_1.pdb
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_3_1\bin\Debug\Latihan_3_1.exe
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_3_1\bin\Debug\Latihan_3_1.pdb
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_3_1\obj\Debug\Latihan_3_1.Form1.resources
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_3_1\obj\Debug\Latihan_3_1.Properties.Resources.resources
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_3_1\obj\Debug\Latihan_3_1.csproj.GenerateResource.Cache
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_3_1\obj\Debug\Latihan_3_1.csprojResolveAssemblyReference.cache

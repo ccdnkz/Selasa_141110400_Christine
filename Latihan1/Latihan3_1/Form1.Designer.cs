@@ -1,4 +1,4 @@
-﻿namespace Latihan3_1
+﻿namespace Latihan_3_1
 {
     partial class Form1
     {
@@ -28,119 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.rtbNote = new System.Windows.Forms.RichTextBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.font = new System.Windows.Forms.ToolStripComboBox();
+            this.bold = new System.Windows.Forms.ToolStripButton();
+            this.italic = new System.Windows.Forms.ToolStripButton();
+            this.und = new System.Windows.Forms.ToolStripButton();
+            this.ffamily = new System.Windows.Forms.ToolStripComboBox();
+            this.color = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // rtbNote
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(12, 51);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(701, 324);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.SelectionChanged += new System.EventHandler(this.richTextBox1_SelectionChanged);
+            this.rtbNote.Location = new System.Drawing.Point(0, 28);
+            this.rtbNote.Name = "rtbNote";
+            this.rtbNote.Size = new System.Drawing.Size(530, 381);
+            this.rtbNote.TabIndex = 0;
+            this.rtbNote.Text = "";
+            this.rtbNote.SelectionChanged += new System.EventHandler(this.rtbNote_SelectionChanged);
+            this.rtbNote.TextChanged += new System.EventHandler(this.rtbNote_TextChanged);
             // 
-            // comboBox1
+            // toolStrip1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(224, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(194, 21);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "(Select font type)";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.font,
+            this.bold,
+            this.italic,
+            this.und,
+            this.ffamily,
+            this.color});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(542, 25);
+            this.toolStrip1.TabIndex = 6;
+            this.toolStrip1.Text = "toolStrip1";
             // 
-            // checkBox1
+            // font
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(12, 16);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(39, 23);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "B";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.font.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.font.Name = "font";
+            this.font.Size = new System.Drawing.Size(121, 25);
+            this.font.SelectedIndexChanged += new System.EventHandler(this.tscbFontSize_SelectedIndexChanged);
+            this.font.Click += new System.EventHandler(this.tscbFontSize_Click);
             // 
-            // checkBox2
+            // bold
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(57, 16);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(41, 23);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = " I ";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.bold.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bold.Image = ((System.Drawing.Image)(resources.GetObject("bold.Image")));
+            this.bold.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.bold.Name = "bold";
+            this.bold.Size = new System.Drawing.Size(23, 22);
+            this.bold.Text = "B";
+            this.bold.Click += new System.EventHandler(this.tsbtnBold_Click);
             // 
-            // checkBox3
+            // italic
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(107, 16);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(38, 23);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "U";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            this.italic.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.italic.Image = ((System.Drawing.Image)(resources.GetObject("italic.Image")));
+            this.italic.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.italic.Name = "italic";
+            this.italic.Size = new System.Drawing.Size(23, 22);
+            this.italic.Text = "toolStripButton2";
+            this.italic.Click += new System.EventHandler(this.tsbtnItalic_Click);
             // 
-            // comboBox2
+            // und
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(425, 17);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(101, 21);
-            this.comboBox2.TabIndex = 4;
-            this.comboBox2.Text = "(Select font size)";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.und.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.und.Image = ((System.Drawing.Image)(resources.GetObject("und.Image")));
+            this.und.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.und.Name = "und";
+            this.und.Size = new System.Drawing.Size(23, 22);
+            this.und.Text = "toolStripButton3";
+            this.und.Click += new System.EventHandler(this.tsbtnUnderline_Click);
             // 
-            // comboBox3
+            // ffamily
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(532, 16);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(164, 21);
-            this.comboBox3.TabIndex = 5;
-            this.comboBox3.Text = "(Select font color)";
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.ffamily.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ffamily.Name = "ffamily";
+            this.ffamily.Size = new System.Drawing.Size(200, 25);
+            this.ffamily.SelectedIndexChanged += new System.EventHandler(this.tscbFont_SelectedIndexChanged);
+            // 
+            // color
+            // 
+            this.color.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.color.Name = "color";
+            this.color.Size = new System.Drawing.Size(121, 25);
+            this.color.SelectedIndexChanged += new System.EventHandler(this.tscbColor_SelectedIndexChanged);
+            this.color.Click += new System.EventHandler(this.tscbColor_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 387);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.richTextBox1);
+            this.ClientSize = new System.Drawing.Size(542, 421);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.rtbNote);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Latihan_3_1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+
+        private System.Windows.Forms.RichTextBox rtbNote;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripComboBox font;
+        private System.Windows.Forms.ToolStripButton bold;
+        private System.Windows.Forms.ToolStripButton italic;
+        private System.Windows.Forms.ToolStripButton und;
+        private System.Windows.Forms.ToolStripComboBox ffamily;
+        private System.Windows.Forms.ToolStripComboBox color;
     }
 }
 
