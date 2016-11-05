@@ -1,0 +1,13 @@
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_5_1\bin\Debug\Latihan_5_1.exe
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_5_1\bin\Debug\Latihan_5_1.exe.config
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_5_1\obj\Debug\Latihan_5_1.csprojResolveAssemblyReference.cache
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_5_1\obj\Debug\Latihan_5_1.frmMain.resources
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_5_1\obj\Debug\Latihan_5_1.frmEditor.resources
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_5_1\obj\Debug\Latihan_5_1.Properties.Resources.resources
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_5_1\obj\Debug\Latihan_5_1.csproj.GenerateResource.Cache
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_5_1\obj\Debug\Latihan_5_1.exe
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_5_1\obj\Debug\Latihan_5_1.pdb
+D:\My Files\Mikroskil\Mata Kuliah\SEMESTER 5\Pemrograman Framework .NET Lanjutan\Senin_141110868_Stephen\Latihan_5_1\bin\Debug\Latihan_5_1.pdb
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_5_1\bin\Debug\Latihan_5_1.exe.config
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_5_1\obj\Debug\Latihan_5_1.exe
+D:\CC\Reference\Senin_141110868_Stephen-master\Latihan_5_1\obj\Debug\Latihan_5_1.pdb
