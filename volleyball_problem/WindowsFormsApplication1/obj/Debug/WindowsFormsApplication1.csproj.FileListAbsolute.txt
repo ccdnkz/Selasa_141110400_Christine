@@ -1,0 +1,21 @@
+C:\Users\OWNER\Desktop\CC\cc-2\Kuliah\Test\Test2\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\OWNER\Desktop\CC\cc-2\Kuliah\Test\Test2\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\OWNER\Desktop\CC\cc-2\Kuliah\Test\Test2\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\OWNER\Desktop\CC\cc-2\Kuliah\Test\Test2\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\OWNER\Desktop\CC\cc-2\Kuliah\Test\Test2\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\OWNER\Desktop\CC\cc-2\Kuliah\Test\Test2\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\OWNER\Desktop\CC\cc-2\Kuliah\Test\Test2\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\OWNER\Desktop\CC\cc-2\Kuliah\Test\Test2\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\OWNER\Desktop\CC\cc-2\Kuliah\Test\Test2\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_match\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_match\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_match\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_match\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_match\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_match\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_match\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_match\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_match\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_problem\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_problem\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\volleyball_problem\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
