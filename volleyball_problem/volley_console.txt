@@ -16,7 +16,7 @@ public static double kombinasi(double a, double b)
             if ((a < 25 && b < 25) || (a == b) || (a == 25 && b == 24))
                 //something goes wrong
                 return 0;
-            else if (a == 25 || b == 25)
+            else if (a == 25 && b<25 || b == 25 && a <25)
             {
                 if (a < b)
                 {
@@ -38,7 +38,7 @@ public static double kombinasi(double a, double b)
                 }
                 resultfinal = Math.Round(result1 / result2);
             }
-            else if (Math.Max(a, b) > 25 && (Math.Abs(a-b)==2))
+            else if (Math.Max(a, b) > 25 && (Math.Abs(a - b) == 2))
             {
                 //seri
                 for (double i = 48; i > 24; i--)
@@ -49,7 +49,7 @@ public static double kombinasi(double a, double b)
                 {
                     result2 *= i;
                 }
-                resultfinal = Math.Round((result1/result2) * pow(2, (Math.Min((long)a,(long) b) - 24)));
+                resultfinal = ((Math.Round(result1/result2))%1000000007) * (pow(2, (Math.Min((long)a, (long)b) - 24)) % 1000000007);
             }
             else
                 return 0;
@@ -69,4 +69,5 @@ public static double kombinasi(double a, double b)
             else
                 return ((halfn * halfn) % 1000000007) * b;
         }
+    }
 }

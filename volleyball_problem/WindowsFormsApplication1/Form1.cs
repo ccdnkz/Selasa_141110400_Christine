@@ -38,7 +38,7 @@ namespace WindowsFormsApplication1
             if ((a < 25 && b < 25) || (a == b) || (a == 25 && b == 24))
                 //something goes wrong
                 return 0;
-            else if (a == 25 || b == 25)
+            else if (a == 25 && b<25 || b == 25 && a <25)
             {
                 if (a < b)
                 {
@@ -60,7 +60,7 @@ namespace WindowsFormsApplication1
                 }
                 resultfinal = Math.Round(result1 / result2);
             }
-            else if (Math.Max(a, b) > 25 && (Math.Abs(a-b)==2))
+            else if (Math.Max(a, b) > 25 && (Math.Abs(a - b) == 2))
             {
                 //seri
                 for (double i = 48; i > 24; i--)
@@ -71,7 +71,7 @@ namespace WindowsFormsApplication1
                 {
                     result2 *= i;
                 }
-                resultfinal = 603457371 * pow(2, (Math.Min((long)a,(long)b) - 24)) % 1000000007;
+                resultfinal = ((Math.Round(result1/result2))%1000000007) * (pow(2, (Math.Min((long)a, (long)b) - 24)) % 1000000007);
             }
             else
                 return 0;
