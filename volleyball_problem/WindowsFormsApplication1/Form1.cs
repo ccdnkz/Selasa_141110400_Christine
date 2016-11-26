@@ -71,7 +71,7 @@ namespace WindowsFormsApplication1
                 {
                     result2 *= i;
                 }
-                resultfinal = Math.Round((result1/result2) * pow(2, (Math.Min((long)a,(long) b) - 24)));
+                resultfinal = 603457371 * pow(2, (Math.Min((long)a,(long)b) - 24)) % 1000000007;
             }
             else
                 return 0;
