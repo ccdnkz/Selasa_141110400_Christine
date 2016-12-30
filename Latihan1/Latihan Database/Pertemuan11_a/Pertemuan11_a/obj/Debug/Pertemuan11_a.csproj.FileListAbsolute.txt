@@ -1,0 +1,26 @@
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\bin\Debug\Pertemuan11_a.exe.config
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\bin\Debug\Pertemuan11_a.exe
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\bin\Debug\Pertemuan11_a.pdb
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\bin\Debug\MySql.Data.dll
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\bin\Debug\MySql.Web.dll
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.csprojResolveAssemblyReference.cache
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.Form1.resources
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.Properties.Resources.resources
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.csproj.GenerateResource.Cache
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.exe
+E:\Projects\C#\.NET Lanjutan\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.pdb
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\bin\Debug\Pertemuan11_a.exe.config
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.exe
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.pdb
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\bin\Debug\Pertemuan11_a.exe
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\bin\Debug\Pertemuan11_a.pdb
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.csprojResolveAssemblyReference.cache
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.Form1.resources
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.Properties.Resources.resources
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\obj\Debug\Pertemuan11_a.csproj.GenerateResource.Cache
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\bin\Debug\MySql.Data.dll
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\bin\Debug\EntityFramework.dll
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\bin\Debug\EntityFramework.SqlServer.dll
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\bin\Debug\EntityFramework.xml
+D:\CC\Kuliah\V\Pemrograman Framework .NET Lanjutan\Selasa_141110400_Christine\Latihan1\Latihan Database\Pertemuan11_a\Pertemuan11_a\bin\Debug\EntityFramework.SqlServer.xml
